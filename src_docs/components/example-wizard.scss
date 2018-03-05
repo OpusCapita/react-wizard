@@ -1,0 +1,24 @@
+#wizard-page-1 {
+  h3 {
+    margin-bottom: 2rem;
+  }
+  .input-row {
+    margin-top: 0.5rem;
+    line-height: 3rem;
+    height: 3rem;
+
+    input {
+      margin: auto 0;
+      line-height: 3rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      vertical-align: middle;
+    }
+    span {
+      margin: auto 0.5rem;
+      line-height: 3rem;
+      height: 3rem;
+      vertical-align: middle;
+    }      
+  }
+}
