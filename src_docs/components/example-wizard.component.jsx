@@ -37,7 +37,6 @@ export default class ExampleWizard extends React.PureComponent {
         cancel={this.cancelWizard}
         steps={this.steps}
         localizationTexts={{ save: 'Save', cancel: 'Cancel', saved: 'Saved successfully' }}
-        showSaveSuccess
       />
     );
   }
