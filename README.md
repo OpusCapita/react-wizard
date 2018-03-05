@@ -1,4 +1,4 @@
-# react-hierarchy-selector
+# react-wizard
 
 **ReactWizard** is a React component that provides navigation between pages. It can contain any number of pages.
 
