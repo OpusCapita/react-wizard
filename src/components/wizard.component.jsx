@@ -28,13 +28,15 @@ export default class Wizard extends React.PureComponent {
   getStepByUrlParam() {
     const { steps } = this.props;
     let index = null;
-    let param = /initialStep=([^&]+)/.exec(window.location.href);
+    let param = /initialStep=([^&]+)/.exec(this.getLocation());
     param = param ? param[1] : null;
     if (param && steps && steps.length > 0) {
       index = steps.findIndex(step => step.id === param);
     }
     return index;
   }
+
+  getLocation = () => window.location.href;
 
   selectPage = (event, index) => {
     if (event) {
