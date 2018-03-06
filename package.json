@@ -101,6 +101,7 @@
     "write-file-webpack-plugin": "4.2.0"
   },
   "dependencies": {
+    "react-icons": "2.2.7"
   },
   "repository": {
     "type": "git",
