@@ -6,7 +6,8 @@ Wizard component that can contain any number of wizard pages.
 
 ## Dependencies
 
-react-bootstrap
+* @opuscapita/react-icons
+* react-bootstrap
 
 ## Initialization
 
