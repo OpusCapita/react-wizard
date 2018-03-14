@@ -4,6 +4,7 @@
 
 ## next
 
+* Fixed a bug: Changing color of Success indicator to green
 
 ## 1.0.1
 
