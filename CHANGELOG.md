@@ -2,7 +2,7 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
-## next
+## 1.0.2
 
 * Fixed a bug: Changing color of Success indicator to green
 
