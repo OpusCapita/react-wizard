@@ -1,3 +1,5 @@
+$wizard-color-green: #3AA57B;
+
 #wizard-pages {
   #wizard-footer {
     $footer-height: 80px;
@@ -38,7 +40,9 @@
           svg.save-success-indicator {
             width: 2rem;
             height: 2rem;
+            margin-left: 1rem;
             margin-right: 0.5rem;
+            color: $wizard-color-green;
           }
         }
       }
