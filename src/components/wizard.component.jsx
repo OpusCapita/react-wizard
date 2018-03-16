@@ -43,6 +43,11 @@ export default class Wizard extends React.PureComponent {
       event.preventDefault();
     }
     if (index < 0 || index > this.props.steps.length - 1) return;
+
+    if (this.props.onStepChange && (this.state.currentStep !== index)) {
+      this.props.onStepChange(this.state.currentStep, index);
+    }
+
     this.setState({
       currentStep: index,
     });
@@ -87,6 +92,7 @@ Wizard.defaultProps = {
   disableSave: false,
   disableCancel: false,
   showSaveSuccess: false,
+  onStepChange: null,
 };
 
 Wizard.propTypes = {
@@ -109,4 +115,5 @@ Wizard.propTypes = {
   activeStep: PropTypes.number,
   showPageIndicator: PropTypes.bool,
   showSaveSuccess: PropTypes.bool,
+  onStepChange: PropTypes.func,
 };
