@@ -1,3 +1,5 @@
+@import '~@opuscapita/oc-cm-common-styles/styles/colors';
+
 #wizard-header {
   display: flex;
   flex-direction: row;
@@ -40,10 +42,10 @@
       padding: 0 0.7rem;
       cursor: pointer;
       margin-bottom: 1rem;
-      border-bottom: 4px solid #D3DADE;
+      border-bottom: 4px solid $oc-color-support-lightgray;
 
       &.doing {
-        border-bottom: 4px solid #EC6608;
+        border-bottom: 4px solid $oc-color-primary-orange;
       }
     }
 
@@ -54,7 +56,7 @@
         text-align: center;
         padding: 10px;
         text-decoration: none;
-        color: #67707c;
+        color: $oc-color-primary-azure;
 
         label {
           cursor: pointer;
@@ -62,7 +64,7 @@
     }
 
     li a:hover {
-        background-color: #D3DADE;
+        background-color: $oc-color-support-lightgray;
     }
   }
 }

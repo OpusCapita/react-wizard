@@ -4,6 +4,7 @@
 
 ## next
 * Added possiblity to supply a callback function called after navigating to another step.
+* Added common styles from @opusCapita/oc-cm-common-styles library
 
 ## 1.0.2
 

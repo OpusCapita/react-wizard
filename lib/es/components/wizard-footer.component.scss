@@ -1,4 +1,5 @@
-$wizard-color-green: #3AA57B;
+@import '~@opuscapita/oc-cm-common-styles/styles/colors';
+@import '~@opuscapita/oc-cm-common-styles/styles/variables';
 
 #wizard-pages {
   #wizard-footer {
@@ -34,15 +35,15 @@ $wizard-color-green: #3AA57B;
         .save-success-container {
           display: flex;
           align-items: center;
-          margin-left: 1rem;
+          margin-left: $oc-space-content;
           height: calc(#{$footer-height} / 2);
 
           svg.save-success-indicator {
             width: 2rem;
             height: 2rem;
-            margin-left: 1rem;
-            margin-right: 0.5rem;
-            color: $wizard-color-green;
+            margin-left: $oc-space-content;
+            margin-right: $oc-space-content / 2;
+            color: $oc-color-green;
           }
         }
       }
@@ -102,7 +103,7 @@ $wizard-color-green: #3AA57B;
     }
 
     .tab-highlight {
-      background: #EC6608;
+      background: $oc-color-primary-orange;
     }
 
   }
