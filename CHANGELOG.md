@@ -2,9 +2,13 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
-## 1.0.2
+## next
 
 * Added common styles from @opusCapita/oc-cm-common-styles library
+
+## 1.0.2
+
+* Fixed a bug: Changing color of Success indicator to green
 
 ## 1.0.1
 
