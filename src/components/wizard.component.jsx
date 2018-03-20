@@ -45,7 +45,9 @@ export default class Wizard extends React.PureComponent {
     if (index < 0 || index > this.props.steps.length - 1) return;
 
     if (this.props.onStepChange && (this.state.currentStep !== index)) {
-      this.props.onStepChange(this.state.currentStep, index);
+      const previousStepId = this.props.steps[this.state.currentStep].id;
+      const currentStepId = this.props.steps[index].id;
+      this.props.onStepChange(previousStepId, currentStepId);
     }
 
     this.setState({
