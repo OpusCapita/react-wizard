@@ -4,7 +4,6 @@
 
 ## next
 
-* Fixed a bug: Changing color of Success indicator to green
 * Added common styles from @opusCapita/oc-cm-common-styles library
 
 ## 1.0.1
