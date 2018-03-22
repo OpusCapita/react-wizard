@@ -26,6 +26,7 @@ showPageIndicator | bool | true | Sign of page indicator showing
 steps | array | required | Steps of the wizard
 activeStep | number | 0 | Index of the active step. You can also set initial active step via URL parameter 'initialStep', e.g. http://localhost/wizard/?initialStep=stepId
 showSaveSuccess | bool | false | If true, shows a success message in the footer
+onStepChange | function | null | Callback function called after user navigates to another step. Provides id of the previous step and id of the current step.
 
 ### Wizard - steps props
 
