@@ -93,9 +93,9 @@ export default class WizardHeader extends React.PureComponent {
           {this.props.steps.map((step, i) => {
             let labelClassName = '';
             if (step.hasRequiredPropsErrors) {
-              labelClassName = 'oc-mandatory-error';
+              labelClassName = 'oc-ui-mandatory-error';
             } else if (step.hasRequiredProps) {
-              labelClassName = 'oc-mandatory';
+              labelClassName = 'oc-ui-mandatory';
             }
             return (
               <li

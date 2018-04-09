@@ -3,6 +3,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## next
+* Fixed obsolete class names: oc-mandatory and oc-mandatory-error.
 
 ## 1.1.0
 * Fixed in issues: button labels are upper in IE than in other browsers
