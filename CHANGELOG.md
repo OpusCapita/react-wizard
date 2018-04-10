@@ -3,6 +3,9 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## next
+
+
+## 1.1.1
 * Fixed obsolete class names: oc-mandatory and oc-mandatory-error.
 
 ## 1.1.0
