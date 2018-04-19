@@ -23,6 +23,7 @@ localizationTexts | map | { save: 'Save', cancel: 'Cancel', saved: 'Saved' } | L
 save | function | required | Callback function called, when the wizard is saved
 disableSave | bool | false | Disable the Save button
 showPageIndicator | bool | true | Sign of page indicator showing
+showHeaderTabs | bool | true | Show tabs in the header
 steps | array | required | Steps of the wizard
 activeStep | number | 0 | Index of the active step. You can also set initial active step via URL parameter 'initialStep', e.g. http://localhost/wizard/?initialStep=stepId
 showSaveSuccess | bool | false | If true, shows a success message in the footer
@@ -36,7 +37,7 @@ component | element | required | Step content
 hasRequiredProps | bool | false | Sign of required fields in the content
 hasRequiredPropsErrors | bool | false | Sign of invalidated required props
 id | [number, string] | required | Step id
-name | [element, string] | required | Step name
+name | [element, string] | undefined | Step name
 
 ## Code example
 

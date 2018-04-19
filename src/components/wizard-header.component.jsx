@@ -16,10 +16,11 @@ export default class WizardHeader extends React.PureComponent {
       hasRequiredProps: PropTypes.bool,
       hasRequiredPropsErrors: PropTypes.bool,
       id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-      name: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+      name: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
     })).isRequired,
     selectPage: PropTypes.func.isRequired,
     currentStep: PropTypes.number.isRequired,
+    showHeaderTabs: PropTypes.bool.isRequired,
   }
 
   constructor() {
@@ -85,12 +86,15 @@ export default class WizardHeader extends React.PureComponent {
   render() {
     return (
       <div id="wizard-header">
-        { this.state.showScroll &&
-          <button className="hidden-button" onClick={this.scrollLeft}>
-            <FaCaretLeft />
-          </button> }
-        <ul ref={(node) => { this.scrollbar = node; }}>
-          {this.props.steps.map((step, i) => {
+        {this.state.showScroll &&
+        <button className="hidden-button" onClick={this.scrollLeft}>
+          <FaCaretLeft />
+        </button>}
+        <ul ref={(node) => {
+          this.scrollbar = node;
+        }}
+        >
+          {this.props.showHeaderTabs && this.props.steps.map((step, i) => {
             let labelClassName = '';
             if (step.hasRequiredPropsErrors) {
               labelClassName = 'oc-ui-mandatory-error';
@@ -101,7 +105,9 @@ export default class WizardHeader extends React.PureComponent {
               <li
                 key={step.id}
                 className={i === this.props.currentStep ? 'doing' : ''}
-                ref={(node) => { this.tabElements[i] = node; }}
+                ref={(node) => {
+                  this.tabElements[i] = node;
+                }}
               >
                 <a
                   id={step.id}
@@ -123,10 +129,10 @@ export default class WizardHeader extends React.PureComponent {
             );
           })}
         </ul>
-        { this.state.showScroll &&
-          <button className="hidden-button" onClick={this.scrollRight}>
-            <FaCaretRight />
-          </button> }
+        {this.state.showScroll &&
+        <button className="hidden-button" onClick={this.scrollRight}>
+          <FaCaretRight />
+        </button>}
       </div>
     );
   }
