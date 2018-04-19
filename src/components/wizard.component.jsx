@@ -60,6 +60,7 @@ export default class Wizard extends React.PureComponent {
       <div id="wizard-pages">
         <WizardHeader
           steps={this.props.steps}
+          showHeaderTabs={this.props.showHeaderTabs}
           currentStep={this.state.currentStep}
           selectPage={this.selectPage}
         />
@@ -86,6 +87,7 @@ export default class Wizard extends React.PureComponent {
 Wizard.defaultProps = {
   activeStep: 0,
   showPageIndicator: true,
+  showHeaderTabs: true,
   localizationTexts: {
     save: 'Save',
     cancel: 'Close',
@@ -107,7 +109,7 @@ Wizard.propTypes = {
     hasRequiredProps: PropTypes.bool,
     hasRequiredPropsErrors: PropTypes.bool,
     id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-    name: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+    name: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   })).isRequired,
   localizationTexts: PropTypes.shape({
     save: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
@@ -116,6 +118,7 @@ Wizard.propTypes = {
   }),
   activeStep: PropTypes.number,
   showPageIndicator: PropTypes.bool,
+  showHeaderTabs: PropTypes.bool,
   showSaveSuccess: PropTypes.bool,
   onStepChange: PropTypes.func,
 };

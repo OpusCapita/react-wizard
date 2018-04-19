@@ -20,7 +20,7 @@ export default class WizardFooter extends React.PureComponent {
       cancel: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
     }).isRequired,
     steps: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+      name: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
       component: PropTypes.node.isRequired,
     })).isRequired,
     selectPage: PropTypes.func.isRequired,
@@ -37,7 +37,7 @@ export default class WizardFooter extends React.PureComponent {
   };
 
   getIndicators = () => (
-    this.props.steps.map((step, i) => {
+    this.props.steps.length > 1 && this.props.steps.map((step, i) => {
       if (i === this.props.currentStep) {
         return <span key={step.id} className="tab-indicator tab-highlight" />;
       }
@@ -61,13 +61,14 @@ export default class WizardFooter extends React.PureComponent {
           }
           <div id="bottom-buttons">
             <section>
+              {steps.length > 1 &&
               <Button
                 disabled={currentStep === 0}
                 id="previous-step"
                 onClick={event => this.props.selectPage(event, currentStep - 1)}
               >
                 <FaCaretLeft />
-              </Button>
+              </Button>}
             </section>
             <section>
               <Button
@@ -87,22 +88,23 @@ export default class WizardFooter extends React.PureComponent {
               </Button>
             </section>
             <section>
+              {steps.length > 1 &&
               <Button
                 disabled={currentStep === steps.length - 1}
                 id="next-step"
                 onClick={event => this.props.selectPage(event, currentStep + 1)}
               >
                 <FaCaretRight />
-              </Button>
+              </Button>}
             </section>
           </div>
         </section>
         <section className="right column">
           {showSaveSuccess &&
-            <div className="save-success-container">
-              <FaCheck className="save-success-indicator" />
-              {localizationTexts.saved}
-            </div>}
+          <div className="save-success-container">
+            <FaCheck className="save-success-indicator" />
+            {localizationTexts.saved}
+          </div>}
         </section>
       </div>
     );
