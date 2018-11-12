@@ -4,6 +4,9 @@
 
 ## next
 
+## 1.2.1
+* Update npm packages
+
 ## 1.2.0
 * New showHeaderTabs prop that can be used to hide tabs in the header (e.g. in a single step wizard)
 * Footer's page indicators/navigation arrows are now hidden if wizard has only one step
