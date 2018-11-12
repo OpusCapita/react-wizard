@@ -34,7 +34,7 @@
     "npm": ">=5.4.0"
   },
   "peerDependencies": {
-    "prop-types": "15.6.2",
+    "prop-types": "15",
     "react": "15 || 16",
     "react-dom": "15 || 16",
     "react-bootstrap": ">=0.31.3"
