@@ -3,6 +3,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## next
+* Style fixes in footer
 
 ## 1.2.1
 * Update npm packages
