@@ -7,7 +7,7 @@ import Wizard from '../src/components/wizard.component';
 
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
-const stories = storiesOf('@opuscapita/wizard', module);
+const stories = storiesOf('@opuscapita/react-wizard', module);
 const saveCallback = () => alert('Saved');
 const cancelCallback = () => alert('Canceled');
 
