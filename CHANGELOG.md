@@ -3,6 +3,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## next
+* Added Storybook support
 
 ## 1.2.2
 * Style fixes in footer
