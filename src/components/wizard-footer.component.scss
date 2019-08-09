@@ -5,12 +5,17 @@
   #wizard-footer {
     $footer-height: 80px;
     display: flex;
-    flex: 0 0 auto;
+    flex: 0 0 $footer-height;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: $footer-height;
+    min-height: $footer-height;
+    max-height: $footer-height;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 100%;
-    height: $footer-height;
+    overflow: hidden;
 
     #bottom-indicators {
       display: flex;
@@ -21,8 +26,12 @@
 
     > .column {
       display: flex;
-      flex: 1 1 0;
+      flex: 1 1 0%;
       height: 100%;
+      min-height: 100%;
+      max-height: 100%;
+      overflow: hidden;
+
       &.center {
         flex-direction: column;
         justify-content: flex-end;
@@ -37,6 +46,8 @@
           align-items: center;
           margin-left: $oc-space-content;
           height: calc(#{$footer-height} / 2);
+          min-height: calc(#{$footer-height} / 2);
+          max-height: calc(#{$footer-height} / 2);
 
           svg.save-success-indicator {
             width: 2rem;
@@ -54,9 +65,13 @@
       justify-content: center;
       align-content: space-around;
       height: calc(#{$footer-height} / 2);
+      min-height: calc(#{$footer-height} / 2);
+      max-height: calc(#{$footer-height} / 2);
       flex-wrap: wrap;
       align-self: center;
       width: 100%;
+      min-width: 100%;
+      max-width: 100%;
 
       > section {
         display: flex;
