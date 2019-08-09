@@ -3,6 +3,9 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## next
+
+## 1.2.3
+* Fix IE flexbox issues
 * Added Storybook support
 
 ## 1.2.2
