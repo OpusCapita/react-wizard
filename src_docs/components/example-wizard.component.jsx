@@ -44,6 +44,9 @@ export default class ExampleWizard extends React.PureComponent {
           <span>Show page indicator</span>
         </label>
       </div>
+      <h3>My wizard page 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget urna et turpis pellentesque laoreet sit amet eget velit. Aliquam in nulla eget enim congue ornare sit amet tincidunt est. Nullam suscipit neque a leo vulputate, a elementum justo viverra. Fusce ultrices sollicitudin eros et convallis. Donec ornare porta lobortis. Sed mollis magna ac aliquet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Aenean venenatis justo augue, sit amet accumsan felis varius id. Suspendisse id pulvinar felis, a gravida ante. Nam eu nisi vitae enim congue tempor. Aliquam consectetur feugiat leo. Praesent nisl purus, ullamcorper vel lacus at, consequat consequat lacus. Pellentesque mollis sit amet magna vel mollis. Cras orci leo, malesuada in sapien id, ornare lacinia lorem.</p>
     </div>
   );
 

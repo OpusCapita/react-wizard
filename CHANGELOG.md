@@ -4,6 +4,9 @@
 
 ## next
 
+## 1.2.4
+* Tweak flex styles for better crossbrowser support
+
 ## 1.2.3
 * Fix IE flexbox issues
 * Added Storybook support
