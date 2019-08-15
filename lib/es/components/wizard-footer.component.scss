@@ -7,7 +7,7 @@
     display: flex;
     flex: 0 0 $footer-height;
     width: 100%;
-    min-width: 100%;
+    min-width: 0%;
     max-width: 100%;
     height: $footer-height;
     min-height: $footer-height;
@@ -27,9 +27,9 @@
     > .column {
       display: flex;
       flex: 1 1 0%;
-      height: 100%;
-      min-height: 100%;
-      max-height: 100%;
+      height: $footer-height;;
+      min-height: $footer-height;;
+      max-height: $footer-height;;
       overflow: hidden;
 
       &.center {
@@ -43,6 +43,7 @@
         align-items: flex-end;
         .save-success-container {
           display: flex;
+          flex: 0 0 auto;
           align-items: center;
           margin-left: $oc-space-content;
           height: calc(#{$footer-height} / 2);
