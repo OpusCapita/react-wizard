@@ -1,5 +1,6 @@
 @import '~@opuscapita/oc-cm-common-styles/styles/colors';
 @import '~@opuscapita/oc-cm-common-styles/styles/variables';
+@import '~@opuscapita/oc-cm-common-styles/styles/bootstrap_v3_custom';
 
 #wizard-pages {
   #wizard-footer {
@@ -103,15 +104,15 @@
       }
 
       .oc-primary-button {
-        background-color: $oc-color-primary-orange;
-        border: 1px solid darken($oc-color-primary-orange, 5%);
+        background-color: $btn-primary-bg;
+        border: 1px solid darken($btn-primary-bg, 5%);
         &:hover {
-          background-color: darken($oc-color-primary-orange, 5%);
-          border: 1px solid darken($oc-color-primary-orange, 10%);
+          background-color: darken($btn-primary-bg, 5%);
+          border: 1px solid darken($btn-primary-bg, 10%);
         }
         &:active {
-          background-color: darken($oc-color-primary-orange, 10%);
-          border: 1px solid darken($oc-color-primary-orange, 15%);
+          background-color: darken($btn-primary-bg, 10%);
+          border: 1px solid darken($btn-primary-bg, 15%);
         }
       }
     }
