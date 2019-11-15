@@ -1,7 +1,7 @@
 {
   "author": "OpusCapita (www.opuscapita.com)",
   "name": "@opuscapita/react-wizard",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": false,
   "license": "MIT",
   "description": "Wizard component provides navigation between pages. It can contain any number of pages.",
