@@ -72,6 +72,7 @@ export default class WizardFooter extends React.PureComponent {
             </section>
             <section>
               <Button
+                className="btn-primary"
                 id="save-button"
                 onClick={this.props.save}
                 disabled={this.props.disableSave}
