@@ -101,6 +101,19 @@
           fill: white;
         }
       }
+
+      .oc-primary-button {
+        background-color: $oc-color-primary-orange;
+        border: 1px solid darken($oc-color-primary-orange, 5%);
+        &:hover {
+          background-color: darken($oc-color-primary-orange, 5%);
+          border: 1px solid darken($oc-color-primary-orange, 10%);
+        }
+        &:active {
+          background-color: darken($oc-color-primary-orange, 10%);
+          border: 1px solid darken($oc-color-primary-orange, 15%);
+        }
+      }
     }
 
     .tab-indicator {

@@ -4,6 +4,9 @@
 
 ## next
 
+## 1.2.5
+* Style Save button as a primary one
+
 ## 1.2.4
 * Tweak flex styles for better crossbrowser support
 
